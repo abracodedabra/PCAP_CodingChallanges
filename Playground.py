@@ -1,13 +1,5 @@
-class ExampleClass:
-    a = 1
-    def __init__(self):
-        self.b = 2
+from datetime import datetime
 
-
-example_object = ExampleClass()
-
-print(hasattr(example_object, 'b'))
-print(hasattr(example_object, 'a'))
-print(hasattr(ExampleClass, 'b'))
-print(hasattr(ExampleClass, 'a'))
-
+print("today:", datetime.today())
+print("now:", datetime.now())
+print("utcnow:", datetime.utcnow())
